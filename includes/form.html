@@ -1,6 +1,6 @@
 <form
   id="contestForm"
-  name="finestCheesesContestForm"
+  name="olympicContestForm"
   class="validate"
   autocomplete="off"
   action="/"
@@ -51,7 +51,7 @@
   
 
   
-  <fieldset class="form-group col-12 p-md-0 province-name-wrap">
+  <fieldset class="form-group col-12 p-md-0">
     <select
       id="provinceName"
       name="province"
@@ -68,7 +68,6 @@
       <option value="NL"></option>
       <option value="NS"></option>
       <option value="ON"></option>
-      <option value="QUE"></option>
       <option value="PE"></option>
       <option value="SK"></option>
       <option value="NT"></option>
@@ -167,18 +166,20 @@
 
   
   <div class="form-group col-12 p-md-0 additional-help">
-    <div class="help-message-wrap">
-      <div
-        tabindex="0"
-        class="help-message"
-        data-toggle="tooltip"
-        data-placement="bottom"
-        title=" <br><div class='text-center pt-3'><img src='../img/upc.png' /></span> "
-      ></div>
-      <div class="purchase">
-         <a href="#footer" class="purch-link"></a>
-      </div>
+    <div
+      id="upcCodeHelp"
+      class="no-purchase-necessary"
+    >
+      
+      <a href=""></a>
     </div>
+    <div
+      tabindex="0"
+      class="help-message"
+      data-toggle="tooltip"
+      data-placement="bottom"
+      title=" <br><div class='text-center pt-3'><img src='../img/upc.png' /></span> "
+    ></div>
   </div>
   
 
@@ -188,7 +189,7 @@
       id="gRecaptcha"
       class="g-recaptcha"
       data-sitekey="6Lf3IbAUAAAAAP-q4TpZBT5dZRCLkTZSFWK0sGec"
-      data-theme="light"
+      data-theme="clean"
     ></div>
     <div class="captcha-error error-message">
       
@@ -246,7 +247,7 @@
     <button
       type="submit"
       id="submitEntry"
-      class="btn agropur-btn submit-btn"
+      class="btn agropur-btn"
     ></button>
   </div>
   
